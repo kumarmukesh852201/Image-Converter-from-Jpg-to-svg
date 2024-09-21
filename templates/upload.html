@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG to SVG</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+
+</head>
+<body>
+    <!-- Page 0 Content -->
+    <header>
+        <div class="container">
+            <h1>Image Converter</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Features</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="upload-section">
+                <h2>Convert PNG to SVG</h2>
+                <form method="post" enctype="multipart/form-data">
+                    <div class="upload-area">
+                        <label for="file" class="upload-label">
+                            <span>Upload File</span>
+                            <input type="file" name="file" accept="image/png" id="file">
+                        </label>
+                        <div class="message">
+                        <p id="file-name">No file chosen </p> <!-- Display chosen file name here -->
+                        <P id="msg">file must be PNG and upto 15 MB</P>
+                        </div>
+                    </div>
+                    <div class="url-area">
+                        <label for="url">Or enter image URL:</label>
+                        <input type="url" name="url" placeholder="Enter image URL" id="url">
+                    </div>
+                    <div class="button-row">
+                        <button type="submit" class="convert-button">Convert</button>
+                        <button type="button" onclick="window.location.reload();" class="reload-button">Upload another file</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="image-section">
+                <img src="{{ url_for('static', filename='images/img.png') }}" alt="Sample Image">
+            </section>
+        </div>
+    </main>
+
+
+
+    <!-- Page 1 Content -->
+    <section class="container page-1">
+        <div class="left">
+            <img src="{{ url_for('static', filename='images/media.png') }}" alt="Image conversion" />
+        </div>
+        <div class="right">
+            <h1>What is a PNG to SVG Converter?</h1>
+            <div class="card">    
+            <p>A PNG to SVG converter is a digital tool designed to transform raster images in PNG (Portable Network Graphics) format into vector images in SVG (Scalable Vector Graphics) format. PNG images are composed of pixels, which can result in a loss of quality when the image is resized or scaled. In contrast, SVG images are based on mathematical paths and shapes, enabling them to be scaled infinitely without any degradation in quality. This makes SVGs ideal for high-resolution displays and various design applications. The conversion process is particularly advantageous for graphic designers, web developers, and digital artists who require scalable and flexible graphics for logos, icons, illustrations, and other design elements. By converting PNG to SVG, users can maintain the integrity and clarity of their images across different sizes and devices, ensuring a professional and polished appearance in their projects.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Page 2 Content -->
+    <section class="container page-2">
+        <h2 id="how-to-convert-a-png-to-jpg">How to convert a PNG to SVG.</h2>
+        <div class="card-container">
+            <div class="card">
+                <picture>
+                    <img loading="lazy" alt="Icon: Upload" src="{{ url_for('static', filename='images/media 0.png') }}" width="190" height="194">
+                </picture>
+                <h3 id="select">1. Select.</h3>
+                <p>Choose a PNG image from your photo library that is less than 2GB in size.</p>
+            </div>
+            <div class="card">
+                <picture>
+                    <img loading="lazy" alt="Icon: Upload" src="{{ url_for('static', filename='images/media_1.png') }}" width="190" height="194">
+                </picture>
+                <h3 id="convert">2. Convert.</h3>
+                <p>Upload your image to automatically convert it to SVG format in an instant.</p>
+            </div>
+            <div class="card">
+                <picture>
+                    <img loading="lazy" alt="Icon: Upload" src="{{ url_for('static', filename='images/media 2.png') }}" width="190" height="194">
+                </picture>
+                <h3 id="continue-editing">3. Continue editing.</h3>
+                <p>Your new image will download as a SVG file. Save it, share it, or keep editing it to make it your own.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3 Content -->
+    <section class="container page-3">
+        <div class="left">
+            <h1>Why Use a PNG to SVG Converter?</h1>
+           <p>A PNG to SVG converter is essential for transforming pixel-based images into scalable vector graphics. This conversion allows images to be resized without losing quality, ensuring they remain sharp and clear at any dimension. It’s particularly beneficial for logos, icons, and other design elements that need to be versatile across various devices and resolutions. By converting to SVG, you gain flexibility in design and maintain a professional appearance in both digital and print media. Additionally, SVG files often have smaller file sizes compared to high-resolution PNGs, contributing to faster website loading times and improved performance. This makes a PNG to SVG converter a valuable tool for designers, developers, and anyone needing high-quality, scalable graphics.</p>
+        </div>
+        <div class="right">
+            <div class="card">
+                <h2>Benefits</h2>
+                <ul>
+                    <li><strong>Reduced File Size:</strong>SVG files are typically smaller than PNG, especially for images with simple shapes and text.</li>
+                    <li><strong>Scalability:</strong> SVG files are vector-based, meaning they can be scaled to any size without losing quality.</li>
+                    <li><strong>Enhanced Compatibility:</strong>SVGs are supported by most modern web browsers and design software.</li>
+                    <li><strong>Efficient Sharing:</strong>Smaller file sizes and scalability make SVGs ideal for sharing across various platforms.</li>
+                    <li><strong>Optimized for Web:</strong> SVGs are perfect for web use, offering sharp and clear graphics without increasing load times.</li>
+                    <!-- <li><strong>Editability:</strong> SVG files are easily editable with design software, allowing for easy modifications and customization.</li> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 4 Content -->
+    <section class="container page-4">
+        
+            
+            <h1>Who Uses a PNG to SVG Converter?</h1>
+        
+        <div class="container">
+            <div class="card">
+                <h2>Web Designers and Developers</h2>
+                <p>Optimize images for faster website load times, enhancing user experience and SEO performance. Smaller image files improve loading speed, which is crucial for maintaining visitor engagement and achieving better search engine rankings.</p>
+            </div>
+            <div class="card">
+                <h2>Graphic Designers</h2>
+                <p>Ensure compatibility across various platforms and software by converting images to the widely supported SVG format. This compatibility is essential for consistent visual presentation and collaboration with other professionals using different tools.</p>
+            </div>
+            <div class="card">
+                <h2>Photographers</h2>
+                <p>Reduce file sizes for efficient storage and quick sharing without compromising image quality. Smaller files are easier to manage, transfer, and store, making it convenient for photographers to handle large volumes of images.</p>
+            </div>
+            <div class="card">
+                <h2>Everyday Users</h2>
+                <p>Save space and enhance the accessibility of photos on social media and other applications. Converting to SVG allows users to share images more efficiently and ensures they can be viewed on a wide range of devices.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Image Converter. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('file').addEventListener('change', function(event) {
+            
+            var fileName = event.target.files.length > 0 ? event.target.files[0].name : 'No file chosen';
+            document.getElementById('file-name').textContent = fileName;
+        });
+
+    document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+            const MAX_CONTENT_LENGTH = 15 * 1024 * 1024 ;  // 15 MB in bytes
+
+            form.addEventListener("submit", function (event) {
+                const fileInput = form.querySelector('input[type="file"]');
+                const urlInput = form.querySelector('input[type="url"]');
+
+                // Check if neither file nor URL is provided
+                if (fileInput.files.length === 0 && !urlInput.value) {
+                    event.preventDefault();
+                    alert("Please select a file or provide a URL to convert.");
+                    return;
+                }
+
+                // Check if the file size exceeds the maximum limit
+                if (fileInput.files.length > 0 && fileInput.files[0].size > MAX_CONTENT_LENGTH) {
+                    event.preventDefault();
+                    alert("The selected file size exceeds the 15 MB limit. Please upload a smaller file.");
+                    return;
+                }
+            });
+        });   
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,373 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.message{
+    display: flex;
+    justify-content: space-between;
+}
+#file-name {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+#msg {
+    text-align: right;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.upload-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.upload-section h2 {
+    margin-bottom: 20px;
+}
+
+.upload-area,
+.url-area {
+    margin-bottom: 20px;
+}
+
+.upload-label {
+    display: block;
+    cursor: pointer;
+    color: #007bff;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px dashed #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+    background-color: #e0e0e0;
+}
+
+.upload-label input[type="file"] {
+    display: none;
+}
+
+.url-area input[type="url"],
+.convert-button,
+.reload-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 500px;
+    height: 295px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.page-1 {
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+}
+
+.page-1 .container {
+    display: flex;
+    height: 100%;
+    padding: 20px;
+}
+
+.page-1 .left, .page-1 .right {
+    flex: 1;
+    padding: 80px;
+}
+
+.page-1 .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-1 .left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.page-1 .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Page 2 Styles */
+.page-2 {
+    background-color: #ede3e3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-2 .container {
+    width: 80%;
+    background-color: rgb(240, 223, 203);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.page-2 h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.page-2 .card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.page-2 .card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 10px; /* Adjust margin to control space between cards */
+}
+
+.page-2 p {
+    line-height: 1.5;
+}
+
+/* Page 3 Styles */
+.page-3 {
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.page-3 .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.page-3 .left {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 75px;
+    text-align: justify;
+    justify-content: center;
+}
+
+.page-3 .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-3 .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.page-3 ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.page-3 li {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Page 4 Styles */
+
+ .page-4 {
+    font-family: Arial, sans-serif;
+    margin-left: 60px;
+    padding: 0;
+    background-color: #bcc7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+   
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page-4 .main-container {
+    /* width: 100%;
+    padding: 20px; */
+    text-align: center;
+}
+
+.abc {
+    margin-bottom: 40px;
+}
+
+.page-4 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-4 .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 480px;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
