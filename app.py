@@ -54,5 +54,5 @@ def convert_image_to_svg(img):
 def request_entity_too_large(error):
     return "The uploaded file size exceeds the 15 MB limit. Please upload a smaller file.", 413
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
